@@ -66,7 +66,7 @@ public class MainApp extends Application {
 		}
 		
 		EntityManager em = factory.createEntityManager();
-		Query idQuery = em.createQuery("select e.emplid from Employee e");
+		Query idQuery = em.createQuery("select e.emplid from Employee e");//e.emplid
 		
 		List<String> ids = new ArrayList<String>(idQuery.getResultList());
 		for (SalariedEmployee employee : employeesSal) {
@@ -173,6 +173,7 @@ public class MainApp extends Application {
 	}
 
 	public void importEmployees() {
+		
 		//Adds employees from the 2 lists we have to the data base
 		runAddSalariedEmployee();
 		runAddHourlyEmployee();

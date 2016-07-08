@@ -78,9 +78,9 @@ public class PayrollOverviewControler {
 
 	@FXML
 	private void handleImportEmployees() {
-		if (!importEClicked)
+		//if (!importEClicked)
 		mainApp.importEmployees();
-		importEClicked = true;
+		importEClicked = true; 
 	}
 	@FXML
 	private void handleClearDataBase(){
