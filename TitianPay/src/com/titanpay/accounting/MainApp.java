@@ -27,6 +27,7 @@ import javafx.stage.Stage;
 import lombok.Data;
 
 @Data
+@SuppressWarnings("unchecked")
 public class MainApp extends Application {
 	private static final String PERSISTENCE_UNIT_NAME = "titanDB";
 	private static EntityManagerFactory factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);;
@@ -38,6 +39,7 @@ public class MainApp extends Application {
 	public MainApp() {
 	}
 
+	
 	public void runAddHourlyEmployee() {
 		for (HourlyEmployee employee : employeesHour) {
 			List<TimeCard> hourETimeCard = CsvReader.parseTimeCards("timecards.csv", employee.getEmplid());
@@ -204,4 +206,7 @@ public class MainApp extends Application {
 	public static void setFactory(EntityManagerFactory factory) {
 		MainApp.factory = factory;
 	}
+	public static void main(String[] args) {
+        launch(args);
+    }
 }

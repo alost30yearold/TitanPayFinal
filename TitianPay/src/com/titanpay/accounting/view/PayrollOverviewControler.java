@@ -27,6 +27,7 @@ public class PayrollOverviewControler {
 	private ObservableList<String> payedPeople = FXCollections.observableArrayList();
 
 	private boolean payrollClicked = false;
+	@SuppressWarnings("unused")
 	private boolean importEClicked = false;
 	private boolean clearDClicked = false;
 
@@ -51,6 +52,7 @@ public class PayrollOverviewControler {
 		this.mainApp = mainApp;
 	}
 
+	@SuppressWarnings("unchecked")
 	@FXML
 	private void handleRunPayroll() {
 		

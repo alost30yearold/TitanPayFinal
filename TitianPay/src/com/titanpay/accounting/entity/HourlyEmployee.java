@@ -1,6 +1,5 @@
 package com.titanpay.accounting.entity;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +16,7 @@ import com.titanpay.accounting.dataclass.TimeCard;
 
 import lombok.Data;
 
+@SuppressWarnings("serial")
 @Entity
 @Data
 @DiscriminatorValue(value = "HE")

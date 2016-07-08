@@ -5,17 +5,17 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import com.titanpay.accounting.entity.Employee;
 import com.titanpay.accounting.entity.HourlyEmployee;
 import com.titanpay.accounting.entity.SalariedEmployee;
 
 //import test.CsvTest.EmployeeData;
 
+@SuppressWarnings("serial")
 public class CsvReader implements Serializable {
 
+	@SuppressWarnings("unused")
 	public static List<Receipt> parseReceipts(String csvFile, int employeeId) {
 		List<Receipt> parsedReceipts = new ArrayList<>();
 		try (BufferedReader reader = new BufferedReader(new FileReader(csvFile))) {
@@ -46,6 +46,7 @@ public class CsvReader implements Serializable {
 		return parsedReceipts;
 		
 	}
+	@SuppressWarnings("unused")
 	public static List<Receipt> parseReceipts(String csvFile) {
 		List<Receipt> parsedReceipts = new ArrayList<>();
 		try (BufferedReader reader = new BufferedReader(new FileReader(csvFile))) {
@@ -76,6 +77,7 @@ public class CsvReader implements Serializable {
 		
 	}
 	
+	@SuppressWarnings("unused")
 	public static List<TimeCard> parseTimeCards(String csvFile,int employeeId) {
 		List<TimeCard> parsedTimeCards = new ArrayList<>();
 		try (BufferedReader reader = new BufferedReader(new FileReader(csvFile))) {
@@ -114,6 +116,7 @@ public class CsvReader implements Serializable {
 		return parsedTimeCards;
 	
 	}
+	@SuppressWarnings("unused")
 	public static List<TimeCard> parseTimeCards(String csvFile) {
 		List<TimeCard> parsedTimeCards = new ArrayList<>();
 		try (BufferedReader reader = new BufferedReader(new FileReader(csvFile))) {
@@ -152,6 +155,7 @@ public class CsvReader implements Serializable {
 	
 	}
 	
+	@SuppressWarnings("unused")
 	public static List<SalariedEmployee> parseSalariedEmployees(String csvFile) {
 		List<SalariedEmployee> parsedEmployees = new ArrayList<>();
 		try (BufferedReader reader = new BufferedReader(new FileReader(csvFile))) {
@@ -206,6 +210,7 @@ public class CsvReader implements Serializable {
 	
 	}
 	
+	@SuppressWarnings("unused")
 	public static List<HourlyEmployee> parseHourlyEmployees(String csvFile) {
 		List<HourlyEmployee> parsedEmployees = new ArrayList<>();
 		try (BufferedReader reader = new BufferedReader(new FileReader(csvFile))) {

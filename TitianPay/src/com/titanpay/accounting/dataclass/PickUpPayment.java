@@ -2,6 +2,7 @@
 
 import java.text.DecimalFormat;
 
+@SuppressWarnings("serial")
 public class PickUpPayment extends PaymentMethod {
 
 	public PickUpPayment(String eName, double paymentAmount) {

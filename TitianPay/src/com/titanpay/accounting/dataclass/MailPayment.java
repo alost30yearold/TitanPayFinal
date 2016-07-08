@@ -2,6 +2,7 @@ package com.titanpay.accounting.dataclass;
 
 import java.text.DecimalFormat;
 
+@SuppressWarnings("serial")
 public class MailPayment extends PaymentMethod {
 	
 	private Address address;

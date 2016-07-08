@@ -3,6 +3,7 @@ package com.titanpay.accounting.dataclass;
 import java.io.Serializable;
 
 import lombok.Data;
+@SuppressWarnings("serial")
 @Data
 public class Address implements Serializable {
 	private String streetAddress;

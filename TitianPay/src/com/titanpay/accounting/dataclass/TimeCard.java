@@ -3,7 +3,6 @@ package com.titanpay.accounting.dataclass;
 import java.io.Serializable;
 
 import org.joda.time.DateTime;
-import org.joda.time.DateTime.Property;
 import org.joda.time.Duration;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;

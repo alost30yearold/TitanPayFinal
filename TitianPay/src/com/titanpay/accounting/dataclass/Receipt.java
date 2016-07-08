@@ -6,6 +6,7 @@ import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
+@SuppressWarnings("serial")
 public class Receipt implements Serializable {
 	
 	private DateTime date;

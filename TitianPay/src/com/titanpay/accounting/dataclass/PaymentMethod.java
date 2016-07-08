@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 //import com.titanpay.accounting.Employee;
 
+@SuppressWarnings("serial")
 public abstract class PaymentMethod implements Serializable {
 	
 	protected String eName;

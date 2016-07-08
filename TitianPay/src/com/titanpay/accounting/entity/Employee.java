@@ -21,6 +21,7 @@ import com.titanpay.accounting.dataclass.TimeCard;
 
 import lombok.Data;
 
+@SuppressWarnings("serial")
 @Entity
 @Table
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
@@ -50,6 +51,7 @@ public class Employee implements Serializable {
 		super();
 	}
 
+	@SuppressWarnings("unused")
 	public String payToString(String startDate, String endDate) {
 		// Take incoming strings and make them useful Date objects
 		DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyyMMdd-HH:mm");

@@ -16,6 +16,7 @@ import com.titanpay.accounting.dataclass.Receipt;
 
 import lombok.Data;
 
+@SuppressWarnings("serial")
 @Entity
 @Data
 @DiscriminatorValue(value = "SE")

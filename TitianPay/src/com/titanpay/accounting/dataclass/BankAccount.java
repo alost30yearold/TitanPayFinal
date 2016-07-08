@@ -3,6 +3,7 @@ package com.titanpay.accounting.dataclass;
 import java.io.Serializable;
 import java.text.DecimalFormat;
 
+@SuppressWarnings("serial")
 public class BankAccount implements Serializable{
 		
 	private String bankName;
